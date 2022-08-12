@@ -69,7 +69,7 @@ h4:before {
 ==================================================*/
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif; 
     font-size: 14px;
     line-height: 24px;
 }
@@ -236,7 +236,7 @@ nav ul {
     display: inline-block;
     padding-left: 0;
     list-style: none;
-    padding: 20px 10px;
+    padding: 20px;
     margin-bottom: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -249,10 +249,11 @@ nav li {
 
 nav li a {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
+    font-family: 'Libre Caslon Text', serif;
 }
 
 .bg-nav {
@@ -265,17 +266,17 @@ nav li a {
 }
 
 a:focus {
-    color: #444;
+    color: rgb(68, 68, 68);
     text-decoration: none;
 }
 
 a:hover {
-    color:  #92278f;
+    color: #998fbd;
     text-decoration: none;
 }
 
 a.active {
-    color: #92278f;
+    color:#998fbd;
 }
 
 
@@ -283,7 +284,7 @@ a.active {
 ==================================================*/
 
 #home {
-		background:rgba(102, 51, 153, 0.7)
+		background:rgba(122, 68, 177, 0.7)
             url(../photo/main_bg1.png);
 		background-size: cover;
 		height: 100vh;
@@ -294,43 +295,39 @@ a.active {
 
 	#home .container h2{
 		width:500px;
-		font-size:90px;
-		color:#756996;
-		margin:60px 0 0 150px;
-		font-family: 'Lato', sans-serif;
-		font-weight:bold;
+		margin:100px 0 0 200px;
+        font-size:70px;
+		color:#b8a493;
+		font-family: 'Playfair Display', serif;
+      
 	}
 
 	.table-cell {
 		display: table-cell;
 		vertical-align: top;
-		padding-top:100px;
-		
+		padding-top:150px;	
 	}
 	.table-cell h1{
-		color:#937653;
+		color:	 #866236;
         font-weight: bold;
 		padding-top:100px;
+        margin-top:50px;
 	}
 	.disply-table {
 		display: table;
 		height: 100vh;
-		
 	}
 	.box{
 		width:600px;
 		height:50vh;
 		position:absolute;
-		top:40%;
-		left:40%;
-		transform:translate(50%, -50%);
-		
+		top:50%;
+		left:60%;
+		transform:translate(50%, -50%);	
 	}
 	.dia{
 		width:300px;
-		margin:230px 0 0 200px;
-		
-		
+		margin:230px 0 0 200px;	
 	}
 	.dia img{
 		width:100%;
@@ -371,11 +368,11 @@ a.active {
 	}
 	.container h2{
 		text-align:center;
-		font-size:90px;
-		color:#92278f;
-		font-family: 'Lato', sans-serif;
+		font-size:70px;
+		color:#f1f1f5;
+		font-family: 'Playfair Display', serif;
+    
 	}
-	
 	.dia{
 		width:250px;
 		margin:50px 0 0 250px;
@@ -424,25 +421,31 @@ a.active {
     position: absolute;
     border: 10px solid rgba(153,107,187,0.4);
     width: 400px;
-    height: 400px;
+    height: 600px;
     top: 40px;
     left: 50px;
     z-index: 1
 }
 .h{
-	font-size:16px;
+	font-size:18px;
 	font-weight:600;
 	padding-top:20px;
+    letter-spacing: 2px;
 }
 
 .h-1{
 	padding:30px 0 10px;
+    font-size:20px;
 	font-weight:500;
-	color:#d894ec;
-	letter-spacing:5%;
+	color:#998fbd;
+	letter-spacing:20%;
 }
-.h-3{
-	font-weight:600;
+.h-2, .h-3{
+    margin-top: 10px;
+	font-weight:400;
+    font-size:18px;
+    line-height: 28px;
+    color: #191919;
 }
 
 
@@ -523,7 +526,7 @@ a.active {
 }
 
 .timeline-event-copy h3 {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 
 .timeline-event-copy h4 {
@@ -546,7 +549,7 @@ a.active {
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: #92278f;
+    background-color: #998fbd;
     outline: 10px solid #f3f3f3;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -567,12 +570,14 @@ a.active {
     color: white;
     font-size: 12px;
     font-weight: bold;
-    background-color: #ac02824f;
-    box-shadow: inset 0 0 0 0em #92278f;
+    background-color: #8402ac4f;
+    box-shadow: inset 0 0 0 0em #998fbd;
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
 }
+
+
 /* skill section
 ==================================================*/
 #skills{
@@ -630,17 +635,17 @@ a.active {
   display: block;
   width: 100%;
   height: 100%;
-  background: orchid;/*bar 채워지는 color*/
+  background: #998fbd;/*bar 채워지는 color*/
   clip: rect(0, 75px, 150px, 0);
 }
 .skill-box > .skills-circle > ul > li > span.bar-circle-left {
-  background:#004d00;/*2.bar 채워지지않은 비워있는 color*/
+  background:#f4ecd5;/*2.bar 채워지지않은 비워있는 color*/
 					/*1,2 동시에 바꿔야함*/
 }
 .skill-box > .skills-circle > ul > li > span.bar-circle-cover {
   display: block;
-  width: 90%;
-  height: 90%;/*bar 굵기 두껍게 하고싶으면 여기 width랑 height랑 %줄이면됨*/
+  width: 80%;
+  height: 80%;/*bar 굵기 두껍게 하고싶으면 여기 width랑 height랑 %줄이면됨*/
   border-radius: 50%;
   background-color: #fff;/*bar안에 동그라미 color*/
   z-index: 0;
@@ -649,25 +654,24 @@ a.active {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
 /* projects section
 ==================================================*/
 
 #projects {
-    padding: 50px 0 120px;
+    padding: 80px 0 100px;
 		background:#f8f8f8;
 }
-
 .portfolio .categories-grid span {
     font-size: 30px;
     margin-bottom: 30px;
     display: inline-block;
 }
-
 .portfolio .categories-grid .categories ul li {
     list-style: none;
     margin: 20px 0;
 }
-
 .portfolio .categories-grid .categories ul li a {
     display: inline-block;
     color: #60606e;
@@ -676,33 +680,27 @@ a.active {
     -webkit-transition: all .2s ease-in-out .2s;
     transition: all .2s ease-in-out .2s;
 }
-
 .portfolio .categories-grid .categories ul li a:hover,
 .portfolio .categories-grid .categories ul li a:focus {
     text-decoration: none;
 }
-
 .portfolio .categories-grid .categories ul li a.active {
     background-color: #92278f;
     padding: 0px 20px;
     color: white;
     text-decoration: none;
 }
-
 .portfolio_filter {
     padding-left: 0;
 }
-
 .portfolio_item {
     position: relative;
-    margin: 10px 0;
-	
+    margin: 10px 0;	
 }
 .img-responsive{
 	width:100%;
     display: block;
 }
-
 .portfolio_item .portfolio_item_hover {
     position: absolute;
     top: 0px;
@@ -786,9 +784,6 @@ a.active {
     margin: 0 auto;
     text-align: center;
 }
-
-
-
 .portfolio-padding {
     padding: 50px 0;
 }
@@ -1004,9 +999,9 @@ fieldset {
 	}
 	.container h2{
 		text-align:right;
-		font-size:60px;
-		color:#92278f;
-		font-family: 'Lato', sans-serif;
+		font-size:50px;
+		color:#f1f1f5;
+		font-family: 'Playfair Display', serif;
 	}
 	.dia{
 		width:200px;
@@ -1047,21 +1042,27 @@ fieldset {
     }
 }
 
-.portfolio_container .col-md-12{padding-left:0;
+.portfolio_container .col-md-12{
+    padding-left:0;
 	padding-right:0;}
 .item_info{
 	padding-top:50px;
 }	
-.project_btn{display:inline-block;
-	padding:5px 18px;
+.project_btn{
+    display:inline-block;
+	padding:5px 16px;
 	border:1px solid rebeccapurple;
 	border-radius:30px;
 	color: rgba(102, 51, 153, 0.767);
-font-weight: bold;}
+    font-weight: bold;
+    font-size: 16px;
+}
 .project_btn:hover{color:#fff;
 	background:rebeccapurple;}
-.project_btn_box{text-align:left;
-padding-top:10px;}
+.project_btn_box{
+    text-align:left;
+    padding-top:10px;}
 .clear{clear:both;}
 .portfolio_item{height:230px;}
 .portfolio_bg{background:url(../img/portfolio/01.jpg);}
+
